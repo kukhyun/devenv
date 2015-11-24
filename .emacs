@@ -26,6 +26,8 @@
 (add-hook 'erlang-mode-hook 'errai-theme)
 (add-hook 'elixir-mode-hook 'errai2-theme)
 
+;; company-mode
+(add-hook 'after-init-hook 'global-company-mode)
 
 ;;(ujelly)
 
