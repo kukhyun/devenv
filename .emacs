@@ -25,12 +25,12 @@
 (errai-theme)
 (add-hook 'erlang-mode-hook 'errai-theme)
 (add-hook 'elixir-mode-hook 'errai2-theme)
+(add-hook 'elixir-mode-hook 'alchemist-mode)
 
 ;; company-mode
 (add-hook 'after-init-hook 'global-company-mode)
 
 ;;(ujelly)
-
 
 ;;(setq neo-theme 'ascii)
 (add-to-list 'load-path "/some/path/neotree")
