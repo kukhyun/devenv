@@ -1,11 +1,11 @@
 # DevEnv
-Development Environment for Emacs, Linux  
-Emacs, Linux를 위한 개발환경
+Development Environment for Emacs, Linux, OSX
+Emacs, Linux, OSX를 위한 개발환경
 
 ## Version
 
-* Ubuntu 14.04 LTS
-* Emacs 24.5.2
+* Ubuntu 16.04 LTS / 14.04 LTS
+* Emacs 24.5.x
 
 ## Packages for emacs
 
@@ -13,5 +13,5 @@ Emacs, Linux를 위한 개발환경
 * neotree
 * markdown-mode
 * elixir-mode
-* alchemist
-
+* alchemist (company)
+* powerline
