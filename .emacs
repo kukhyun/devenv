@@ -5,6 +5,11 @@
 (setq inhibit-startup-message t)
 
 (menu-bar-mode -1)
+
+;; c 
+(setq c-default-style "linux"
+	  c-basic-offset 4)
+
 ;; erlang
 (setq load-path (cons "/usr/local/lib/erlang/lib/tools-2.8.1/emacs"
                          load-path))
@@ -22,10 +27,18 @@
 (require 'color-theme)
 (load-file "~/.emacs.d/errai-theme.el")
 (load-file "~/.emacs.d/errai2-theme.el")
-(errai-theme)
+(errai2-theme)
 (add-hook 'erlang-mode-hook 'errai-theme)
 (add-hook 'elixir-mode-hook 'errai2-theme)
 (add-hook 'elixir-mode-hook 'alchemist-mode)
+
+;; moe-theme
+(require 'powerline)
+(powerline-default-theme)
+;;(require 'moe-theme)
+;;(powerline-moe-theme)
+;;(setq moe-light-pure-white-background-in-terminal t)
+;;(moe-dark)
 
 ;; company-mode
 (add-hook 'after-init-hook 'global-company-mode)
