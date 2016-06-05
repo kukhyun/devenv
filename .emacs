@@ -23,6 +23,15 @@
         '("melpa" . "http://melpa.milkbox.net/packages/") t)
 ;; customize
 (package-initialize)
+
+;; python
+(add-hook 'python-mode-hook
+		  (function (lambda ()
+					  (setq indent-tabs-mode nil
+							tab-width 4))))
+
+
+
 ;; my color
 (require 'color-theme)
 (load-file "~/.emacs.d/errai-theme.el")
