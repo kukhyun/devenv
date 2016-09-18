@@ -20,16 +20,21 @@
 ;; package
 (require 'package)
 (add-to-list 'package-archives
-        '("melpa" . "http://melpa.milkbox.net/packages/") t)
+			 '("melpa" . "http://melpa.org/packages/") t)
+(add-to-list 'package-archives
+			 '("elpy" . "https://jorgenschaefer.github.io/packages/"))
 ;; customize
 (package-initialize)
 
 ;; python
 (add-hook 'python-mode-hook
-		  (function (lambda ()
-					  (setq indent-tabs-mode nil
-							tab-width 4))))
+		  (lambda ()
+			(setq indent-tabs-mode nil)
+			(setq tab-width 4)
+			(setq python-indent 4)))
 
+;; python
+(elpy-enable)
 
 
 ;; my color
