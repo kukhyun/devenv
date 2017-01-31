@@ -9,6 +9,7 @@ Emacs, Linux, OSX를 위한 개발환경
 
 ## Packages for emacs
 
+* elpy 설치전 확인 [https://github.com/jorgenschaefer/elpy]
 * magit
 * neotree
 * markdown-mode
