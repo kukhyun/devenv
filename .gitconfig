@@ -6,7 +6,7 @@
 [core]
 	editor = emacs
 [alias]
-	lg = log --graph --abbrev-commit --decorate --date=relative --format=format:'%C(yellow)%h%C(reset) %C(green)%d%C(reset) %C(white)%<(50,trunc)%s%C(reset) %C(cyan)(%ar)%C(reset) %C(dim white)- %an%C(reset)' --all
+	lg = log --graph --abbrev-commit --decorate --date=relative --format=format:'%C(yellow)%h%C(reset) %C(green)%d%C(reset) %C(white)%<|(80,trunc)%s%C(reset) %C(cyan)(%ar)%C(reset) %C(dim white)- %an%C(reset)' --all
 [pager]
 	diff = diff-highlight | less
 	show = diff-highlight | less
