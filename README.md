@@ -16,3 +16,6 @@ Emacs, Linux, OSX를 위한 개발환경
 * elixir-mode
 * alchemist (company)
 * powerline
+* web-mode
+* projectile
+* ag
