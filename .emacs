@@ -65,6 +65,19 @@
             (setq js-indent-level 2) 
             (setq js2-strict-missing-semi-warning nil))) 
 
+;; 
+(global-linum-mode t)
+(setq-default truncate-lines t)
+
+(defun linum-format-func (line)
+  (let ((w (length (number-to-string (count-lines (point-min) (point-max))))))
+     (propertize (format (format "%%%dd " w) line) 'face 'linum)))
+
+(setq linum-format 'linum-format-func)
+;; use customized linum-format: add a addition space after the line number
+
+
+
 ;; my color
 (require 'color-theme)
 (load-file "~/.emacs.d/errai-theme.el")
@@ -105,8 +118,6 @@
 (global-set-key (kbd "C-x <up>")    'windmove-up)
 (global-set-key (kbd "C-x <down>")  'windmove-down)
 
-(setq linum-format "%d ")
-;;(global-linum-mode 1)
 
 (save-place-mode 1) 
 
@@ -140,8 +151,8 @@
  ;; If there is more than one, they won't work right.
  '(custom-safe-themes
    (quote
-	("53a9ec5700cf2bb2f7059a584c12a5fdc89f7811530294f9eaf92db526a9fb5f" default)))
+    ("53a9ec5700cf2bb2f7059a584c12a5fdc89f7811530294f9eaf92db526a9fb5f" default)))
  '(package-selected-packages
    (quote
-	(rust-mode kotlin-mode rjsx-mode ag ujelly-theme projectile google-c-style web-mode markdown-mode alchemist magit elpy powerline neotree color-theme))))
+    (go-mode elm-mode rust-mode kotlin-mode rjsx-mode ag ujelly-theme projectile google-c-style web-mode markdown-mode alchemist magit elpy powerline neotree color-theme))))
 

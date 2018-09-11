@@ -76,6 +76,7 @@
      (isearch-fail ((t (:background "#dd0093"))))
      (italic ((t (:underline t))))
      (lazy-highlight ((t (:foreground "#dd0093"))))
+     (linum ((,class (:slant italic :foreground "#363636" :background "#171717"))))
      (link ((t (:foreground "cyan1" :underline t))))
      (link-visited ((t (:underline t :foreground "violet"))))
      (match ((t (:background "#dd0093"))))
