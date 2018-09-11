@@ -65,15 +65,20 @@
             (setq js-indent-level 2) 
             (setq js2-strict-missing-semi-warning nil))) 
 
-;; 
-(global-linum-mode t)
-(setq-default truncate-lines t)
+;; 빠르다
+;;(when (version<= "26.0.50" emacs-version )
+;;  (global-display-line-numbers-mode))
+;;(setq display-line-numbers "%4d \u2502 ")
 
-(defun linum-format-func (line)
-  (let ((w (length (number-to-string (count-lines (point-min) (point-max))))))
-     (propertize (format (format "%%%dd " w) line) 'face 'linum)))
+;; 느리다
+;;(global-linum-mode t)
+;;(setq-default truncate-lines t)
 
-(setq linum-format 'linum-format-func)
+;;(defun linum-format-func (line)
+;;  (let ((w (length (number-to-string (count-lines (point-min) (point-max))))))
+;;     (propertize (format (format "%%%dd " w) line) 'face 'linum)))
+
+;;(setq linum-format 'linum-format-func)
 ;; use customized linum-format: add a addition space after the line number
 
 
